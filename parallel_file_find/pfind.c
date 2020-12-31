@@ -69,7 +69,6 @@ void delete_node(list_node* pnode)
 	pnode=NULL;
 }
 
-}*/
 int isEqual(const char* path, const char* str)
 {
 	const char* tmp_str;
@@ -190,7 +189,7 @@ void dequeue()
 
 bool is_dir(struct stat dir_stat)
 {
-	return (dir_stat.st_mode & __S_IFMT) == __S_IFDIR;
+	return (dir_stat.st_mode & S_IFMT) == S_IFDIR;
 }
 
 void free_queue()

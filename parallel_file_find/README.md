@@ -1,4 +1,4 @@
-﻿# Parallel File Find Assignment  
+﻿# Parallel File Find Assignment - implemented with multiple threads  
 
 
 ## Introduction
@@ -10,7 +10,7 @@ The program receives a directory D and a search term T,
 and ﬁnds every ﬁle in D’s directory tree whose name contains T.
 The program parallelizes its work using threads.
 
-##Command line arguments:
+## Command line arguments:
 argv[1]: search root directory
 (search for ﬁles within this directory and its subdirectories).
 
